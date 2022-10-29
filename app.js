@@ -12,7 +12,7 @@ container.addEventListener("mousedown", (e) => {
   function rotate(e) {
     calc = (e.clientX - x) / sensitivity;
     card.style.transform = `
-        rotateY(${calc + prev}deg)
+        rotate3D(${calc + prev}deg)
         `;
     body.style.cursor = "grabbing";
   }
